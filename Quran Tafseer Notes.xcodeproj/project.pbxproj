@@ -15,6 +15,8 @@
 		2D51EBD7250593F2000721EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D51EBD5250593F2000721EC /* LaunchScreen.storyboard */; };
 		2D51EBE2250593F3000721EC /* Quran_Tafseer_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBE1250593F3000721EC /* Quran_Tafseer_NotesTests.swift */; };
 		2D51EBED250593F3000721EC /* Quran_Tafseer_NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBEC250593F3000721EC /* Quran_Tafseer_NotesUITests.swift */; };
+		2D51EBFB2505940C000721EC /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBFA2505940C000721EC /* NoteViewController.swift */; };
+		2D51EBFD25059418000721EC /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBFC25059418000721EC /* EntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2D51EBE8250593F3000721EC /* Quran Tafseer NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quran Tafseer NotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D51EBEC250593F3000721EC /* Quran_Tafseer_NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_Tafseer_NotesUITests.swift; sourceTree = "<group>"; };
 		2D51EBEE250593F3000721EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D51EBFA2505940C000721EC /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		2D51EBFC25059418000721EC /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				2D51EBD3250593F2000721EC /* Assets.xcassets */,
 				2D51EBD5250593F2000721EC /* LaunchScreen.storyboard */,
 				2D51EBD8250593F2000721EC /* Info.plist */,
+				2D51EBFA2505940C000721EC /* NoteViewController.swift */,
+				2D51EBFC25059418000721EC /* EntryViewController.swift */,
 			);
 			path = "Quran Tafseer Notes";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D51EBFB2505940C000721EC /* NoteViewController.swift in Sources */,
+				2D51EBFD25059418000721EC /* EntryViewController.swift in Sources */,
 				2D51EBCF250593F1000721EC /* ViewController.swift in Sources */,
 				2D51EBCB250593F1000721EC /* AppDelegate.swift in Sources */,
 				2D51EBCD250593F1000721EC /* SceneDelegate.swift in Sources */,

@@ -1,24 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Nc-xd-ktL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Entry View Controller-->
+        <scene sceneID="mQw-Zz-cVO">
+            <objects>
+                <viewController storyboardIdentifier="new" id="lAB-44-95X" customClass="EntryViewController" customModule="Quran_Tafseer_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egQ-05-xAF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0iA-NV-XId">
+                                <rect key="frame" x="10" y="54" width="394" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="B74-hu-az5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ejT-d0-XTP">
+                                <rect key="frame" x="10" y="116" width="394" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ejT-d0-XTP" firstAttribute="top" secondItem="0iA-NV-XId" secondAttribute="bottom" constant="10" id="2JH-tb-LFy"/>
+                            <constraint firstItem="ejT-d0-XTP" firstAttribute="leading" secondItem="66L-Mi-ffb" secondAttribute="leading" constant="10" id="H0o-i5-9zs"/>
+                            <constraint firstItem="66L-Mi-ffb" firstAttribute="trailing" secondItem="0iA-NV-XId" secondAttribute="trailing" constant="10" id="L5r-us-ukE"/>
+                            <constraint firstItem="66L-Mi-ffb" firstAttribute="trailing" secondItem="ejT-d0-XTP" secondAttribute="trailing" constant="10" id="dUI-Bz-2tw"/>
+                            <constraint firstItem="0iA-NV-XId" firstAttribute="top" secondItem="66L-Mi-ffb" secondAttribute="top" constant="10" id="eQh-Wl-Cgc"/>
+                            <constraint firstItem="0iA-NV-XId" firstAttribute="leading" secondItem="66L-Mi-ffb" secondAttribute="leading" constant="10" id="vXg-Z0-M40"/>
+                            <constraint firstItem="66L-Mi-ffb" firstAttribute="bottom" secondItem="ejT-d0-XTP" secondAttribute="bottom" constant="10" id="xpa-4L-E48"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="66L-Mi-ffb"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteField" destination="ejT-d0-XTP" id="X8T-Qf-eKw"/>
+                        <outlet property="titleField" destination="0iA-NV-XId" id="eRm-AA-2im"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6LF-ml-YxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="139"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="Zyz-67-woC">
+            <objects>
+                <viewController storyboardIdentifier="note" id="N3I-K9-sZt" customClass="NoteViewController" customModule="Quran_Tafseer_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIV-Af-5Tk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU6-ub-MrR">
+                                <rect key="frame" x="10" y="54" width="394" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kx3-0j-R9p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="22J-1n-4TP">
+                                <rect key="frame" x="10" y="124" width="394" height="728"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="22J-1n-4TP" firstAttribute="top" secondItem="GU6-ub-MrR" secondAttribute="bottom" constant="10" id="0fK-ZK-yGp"/>
+                            <constraint firstItem="qcN-Du-WvB" firstAttribute="bottom" secondItem="22J-1n-4TP" secondAttribute="bottom" constant="10" id="5LC-vz-7Iz"/>
+                            <constraint firstItem="22J-1n-4TP" firstAttribute="leading" secondItem="qcN-Du-WvB" secondAttribute="leading" constant="10" id="9WO-92-eqK"/>
+                            <constraint firstItem="qcN-Du-WvB" firstAttribute="trailing" secondItem="22J-1n-4TP" secondAttribute="trailing" constant="10" id="Aki-9O-5A3"/>
+                            <constraint firstItem="GU6-ub-MrR" firstAttribute="top" secondItem="qcN-Du-WvB" secondAttribute="top" constant="10" id="I4n-Z7-KnN"/>
+                            <constraint firstItem="GU6-ub-MrR" firstAttribute="leading" secondItem="qcN-Du-WvB" secondAttribute="leading" constant="10" id="qKd-s7-sgN"/>
+                            <constraint firstItem="qcN-Du-WvB" firstAttribute="trailing" secondItem="GU6-ub-MrR" secondAttribute="trailing" constant="10" id="yPh-TF-aJ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qcN-Du-WvB"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteLabel" destination="22J-1n-4TP" id="NUT-PL-cIx"/>
+                        <outlet property="titleLabel" destination="GU6-ub-MrR" id="5JR-Yn-iwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQw-zl-o1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2519" y="139"/>
+        </scene>
+        <!--Quran Tafseer Notes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quran_Tafseer_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Notes Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-YH-YRz">
+                                <rect key="frame" x="156.5" y="437.5" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nnm-cy-KfW">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="s66-tP-I90" detailTextLabel="w5d-gO-zON" style="IBUITableViewCellStyleSubtitle" id="0LL-cv-JEF">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0LL-cv-JEF" id="cFb-eG-oo0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s66-tP-I90">
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w5d-gO-zON">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DTu-YH-YRz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Ei-n3-K2w"/>
+                            <constraint firstItem="Nnm-cy-KfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EmK-2l-kas"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Nnm-cy-KfW" secondAttribute="bottom" id="GGW-YD-zf6"/>
+                            <constraint firstItem="Nnm-cy-KfW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eh2-pB-xzo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nnm-cy-KfW" secondAttribute="trailing" id="hfo-uy-ujk"/>
+                            <constraint firstItem="DTu-YH-YRz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oDj-Mu-A7l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Quran Tafseer Notes" id="Vzr-6I-h7A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dqn-ZN-WAr">
+                            <connections>
+                                <action selector="didTapNewNote" destination="BYZ-38-t0r" id="c1g-ni-Eym"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="DTu-YH-YRz" id="wEe-M7-3Ut"/>
+                        <outlet property="table" destination="Nnm-cy-KfW" id="AeT-cx-846"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3pS-5f-eci">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Nc-xd-ktL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="kV2-NL-ccZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S0j-20-wzb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sd-03-5Kc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
