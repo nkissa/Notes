@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D51EBCB250593F1000721EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBCA250593F1000721EC /* AppDelegate.swift */; };
+		2D51EBCD250593F1000721EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBCC250593F1000721EC /* SceneDelegate.swift */; };
+		2D51EBCF250593F1000721EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBCE250593F1000721EC /* ViewController.swift */; };
+		2D51EBD2250593F1000721EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D51EBD0250593F1000721EC /* Main.storyboard */; };
+		2D51EBD4250593F2000721EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D51EBD3250593F2000721EC /* Assets.xcassets */; };
+		2D51EBD7250593F2000721EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D51EBD5250593F2000721EC /* LaunchScreen.storyboard */; };
+		2D51EBE2250593F3000721EC /* Quran_Tafseer_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBE1250593F3000721EC /* Quran_Tafseer_NotesTests.swift */; };
+		2D51EBED250593F3000721EC /* Quran_Tafseer_NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51EBEC250593F3000721EC /* Quran_Tafseer_NotesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D51EBDE250593F3000721EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D51EBBF250593F1000721EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D51EBC6250593F1000721EC;
+			remoteInfo = "Quran Tafseer Notes";
+		};
+		2D51EBE9250593F3000721EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D51EBBF250593F1000721EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D51EBC6250593F1000721EC;
+			remoteInfo = "Quran Tafseer Notes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D51EBC7250593F1000721EC /* Quran Tafseer Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quran Tafseer Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D51EBCA250593F1000721EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D51EBCC250593F1000721EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D51EBCE250593F1000721EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D51EBD1250593F1000721EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D51EBD3250593F2000721EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D51EBD6250593F2000721EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D51EBD8250593F2000721EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D51EBDD250593F3000721EC /* Quran Tafseer NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quran Tafseer NotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D51EBE1250593F3000721EC /* Quran_Tafseer_NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_Tafseer_NotesTests.swift; sourceTree = "<group>"; };
+		2D51EBE3250593F3000721EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D51EBE8250593F3000721EC /* Quran Tafseer NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quran Tafseer NotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D51EBEC250593F3000721EC /* Quran_Tafseer_NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_Tafseer_NotesUITests.swift; sourceTree = "<group>"; };
+		2D51EBEE250593F3000721EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D51EBC4250593F1000721EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBDA250593F3000721EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBE5250593F3000721EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D51EBBE250593F1000721EC = {
+			isa = PBXGroup;
+			children = (
+				2D51EBC9250593F1000721EC /* Quran Tafseer Notes */,
+				2D51EBE0250593F3000721EC /* Quran Tafseer NotesTests */,
+				2D51EBEB250593F3000721EC /* Quran Tafseer NotesUITests */,
+				2D51EBC8250593F1000721EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D51EBC8250593F1000721EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D51EBC7250593F1000721EC /* Quran Tafseer Notes.app */,
+				2D51EBDD250593F3000721EC /* Quran Tafseer NotesTests.xctest */,
+				2D51EBE8250593F3000721EC /* Quran Tafseer NotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D51EBC9250593F1000721EC /* Quran Tafseer Notes */ = {
+			isa = PBXGroup;
+			children = (
+				2D51EBCA250593F1000721EC /* AppDelegate.swift */,
+				2D51EBCC250593F1000721EC /* SceneDelegate.swift */,
+				2D51EBCE250593F1000721EC /* ViewController.swift */,
+				2D51EBD0250593F1000721EC /* Main.storyboard */,
+				2D51EBD3250593F2000721EC /* Assets.xcassets */,
+				2D51EBD5250593F2000721EC /* LaunchScreen.storyboard */,
+				2D51EBD8250593F2000721EC /* Info.plist */,
+			);
+			path = "Quran Tafseer Notes";
+			sourceTree = "<group>";
+		};
+		2D51EBE0250593F3000721EC /* Quran Tafseer NotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D51EBE1250593F3000721EC /* Quran_Tafseer_NotesTests.swift */,
+				2D51EBE3250593F3000721EC /* Info.plist */,
+			);
+			path = "Quran Tafseer NotesTests";
+			sourceTree = "<group>";
+		};
+		2D51EBEB250593F3000721EC /* Quran Tafseer NotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D51EBEC250593F3000721EC /* Quran_Tafseer_NotesUITests.swift */,
+				2D51EBEE250593F3000721EC /* Info.plist */,
+			);
+			path = "Quran Tafseer NotesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D51EBC6250593F1000721EC /* Quran Tafseer Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D51EBF1250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer Notes" */;
+			buildPhases = (
+				2D51EBC3250593F1000721EC /* Sources */,
+				2D51EBC4250593F1000721EC /* Frameworks */,
+				2D51EBC5250593F1000721EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quran Tafseer Notes";
+			productName = "Quran Tafseer Notes";
+			productReference = 2D51EBC7250593F1000721EC /* Quran Tafseer Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D51EBDC250593F3000721EC /* Quran Tafseer NotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D51EBF4250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer NotesTests" */;
+			buildPhases = (
+				2D51EBD9250593F3000721EC /* Sources */,
+				2D51EBDA250593F3000721EC /* Frameworks */,
+				2D51EBDB250593F3000721EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D51EBDF250593F3000721EC /* PBXTargetDependency */,
+			);
+			name = "Quran Tafseer NotesTests";
+			productName = "Quran Tafseer NotesTests";
+			productReference = 2D51EBDD250593F3000721EC /* Quran Tafseer NotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D51EBE7250593F3000721EC /* Quran Tafseer NotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D51EBF7250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer NotesUITests" */;
+			buildPhases = (
+				2D51EBE4250593F3000721EC /* Sources */,
+				2D51EBE5250593F3000721EC /* Frameworks */,
+				2D51EBE6250593F3000721EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D51EBEA250593F3000721EC /* PBXTargetDependency */,
+			);
+			name = "Quran Tafseer NotesUITests";
+			productName = "Quran Tafseer NotesUITests";
+			productReference = 2D51EBE8250593F3000721EC /* Quran Tafseer NotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D51EBBF250593F1000721EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Nasar Issa";
+				TargetAttributes = {
+					2D51EBC6250593F1000721EC = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					2D51EBDC250593F3000721EC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 2D51EBC6250593F1000721EC;
+					};
+					2D51EBE7250593F3000721EC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 2D51EBC6250593F1000721EC;
+					};
+				};
+			};
+			buildConfigurationList = 2D51EBC2250593F1000721EC /* Build configuration list for PBXProject "Quran Tafseer Notes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D51EBBE250593F1000721EC;
+			productRefGroup = 2D51EBC8250593F1000721EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D51EBC6250593F1000721EC /* Quran Tafseer Notes */,
+				2D51EBDC250593F3000721EC /* Quran Tafseer NotesTests */,
+				2D51EBE7250593F3000721EC /* Quran Tafseer NotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D51EBC5250593F1000721EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D51EBD7250593F2000721EC /* LaunchScreen.storyboard in Resources */,
+				2D51EBD4250593F2000721EC /* Assets.xcassets in Resources */,
+				2D51EBD2250593F1000721EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBDB250593F3000721EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBE6250593F3000721EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D51EBC3250593F1000721EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D51EBCF250593F1000721EC /* ViewController.swift in Sources */,
+				2D51EBCB250593F1000721EC /* AppDelegate.swift in Sources */,
+				2D51EBCD250593F1000721EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBD9250593F3000721EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D51EBE2250593F3000721EC /* Quran_Tafseer_NotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D51EBE4250593F3000721EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D51EBED250593F3000721EC /* Quran_Tafseer_NotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D51EBDF250593F3000721EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D51EBC6250593F1000721EC /* Quran Tafseer Notes */;
+			targetProxy = 2D51EBDE250593F3000721EC /* PBXContainerItemProxy */;
+		};
+		2D51EBEA250593F3000721EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D51EBC6250593F1000721EC /* Quran Tafseer Notes */;
+			targetProxy = 2D51EBE9250593F3000721EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D51EBD0250593F1000721EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D51EBD1250593F1000721EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D51EBD5250593F2000721EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D51EBD6250593F2000721EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D51EBEF250593F3000721EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D51EBF0250593F3000721EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D51EBF2250593F3000721EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer Notes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D51EBF3250593F3000721EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer Notes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D51EBF5250593F3000721EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer NotesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-NotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quran Tafseer Notes.app/Quran Tafseer Notes";
+			};
+			name = Debug;
+		};
+		2D51EBF6250593F3000721EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer NotesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-NotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quran Tafseer Notes.app/Quran Tafseer Notes";
+			};
+			name = Release;
+		};
+		2D51EBF8250593F3000721EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer NotesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-NotesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quran Tafseer Notes";
+			};
+			name = Debug;
+		};
+		2D51EBF9250593F3000721EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quran Tafseer NotesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nasarissa.Quran-Tafseer-NotesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quran Tafseer Notes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D51EBC2250593F1000721EC /* Build configuration list for PBXProject "Quran Tafseer Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D51EBEF250593F3000721EC /* Debug */,
+				2D51EBF0250593F3000721EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D51EBF1250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D51EBF2250593F3000721EC /* Debug */,
+				2D51EBF3250593F3000721EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D51EBF4250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer NotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D51EBF5250593F3000721EC /* Debug */,
+				2D51EBF6250593F3000721EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D51EBF7250593F3000721EC /* Build configuration list for PBXNativeTarget "Quran Tafseer NotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D51EBF8250593F3000721EC /* Debug */,
+				2D51EBF9250593F3000721EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D51EBBF250593F1000721EC /* Project object */;
+}
